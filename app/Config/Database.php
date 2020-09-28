@@ -20,7 +20,7 @@ class Database extends \CodeIgniter\Database\Config
 	 * Lets you choose which connection group to
 	 * use if no other is specified.
 	 *
-	 * @var string
+	 * @var string 
 	 */
 	public $defaultGroup = 'default';
 
@@ -32,13 +32,13 @@ class Database extends \CodeIgniter\Database\Config
 	public $default = [
 		'DSN'      => '',
 		'hostname' => 'localhost',
-		'username' => '',
+		'username' => 'root',
 		'password' => '',
-		'database' => '',
+		'database' => 'banquecodeigniter',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
-		'DBDebug'  => (ENVIRONMENT !== 'production'),
+		'DBDebug'  => (ENVIRONMENT !== 'developement '),
 		'cacheOn'  => false,
 		'cacheDir' => '',
 		'charset'  => 'utf8',
